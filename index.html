@@ -1,44 +1,85 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Empresa de Economía Circular</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal de Cartografía</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    .section {
+      padding: 40px 20px;
+    }
+    .section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .hero {
+      background: url('images/hero-map.jpg') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Bienvenidos a [Nombre de tu Empresa]</h1>
-    <p>Impulsamos la economía circular para un futuro sostenible.</p>
+  <!-- Página de Inicio -->
+  <header class="hero">
+    <h1>Portal de Cartografía</h1>
+    <p>Explora mapas, datos y servicios geoespaciales</p>
+    <a href="#visor" class="btn btn-light mt-4">Ir al Visor Web</a>
   </header>
 
-  <main>
-    <section>
-      <h2>¿Quiénes somos?</h2>
-      <p>Somos una empresa dedicada a transformar modelos de producción y consumo hacia una economía circular. Trabajamos con innovación para reutilizar, reciclar y reducir el impacto ambiental.</p>
+  <main class="container">
+    <!-- Sección Visor Web -->
+    <section id="visor" class="section">
+      <h2>Mapa Interactivo / Visor Web</h2>
+      <img src="images/visor-web.png" alt="Visor Web">
+      <p>Visualiza capas temáticas, mide, imprime y compara mapas.</p>
     </section>
 
-    <section>
-      <h2>Servicios</h2>
-      <ul>
-        <li>Gestión integral de residuos</li>
-        <li>Ecodiseño y reutilización de materiales</li>
-        <li>Consultoría en economía circular</li>
-        <li>Educación y formación ambiental</li>
-      </ul>
+    <!-- Catálogo de Datos -->
+    <section class="section">
+      <h2>Catálogo de Datos Geográficos</h2>
+      <img src="images/catalogo-datos.jpg" alt="Catálogo de Datos">
+      <p>Consulta capas disponibles, descarga en múltiples formatos y revisa metadatos.</p>
     </section>
 
-    <section>
-      <h2>Contacto</h2>
-      <p>Correo: contacto@empresa.com<br>Teléfono: +57 300 000 0000</p>
+    <!-- Descargas -->
+    <section class="section">
+      <h2>Descargas</h2>
+      <img src="images/descargas.jpg" alt="Descargas">
+      <p>Archivos listos para su uso con condiciones de uso y manuales incluidos.</p>
+    </section>
+
+    <!-- Servicios Web -->
+    <section class="section">
+      <h2>Servicios Web</h2>
+      <img src="images/servicios-web.jpg" alt="Servicios Web">
+      <p>Conéctate a servicios WMS, WFS y WMTS desde QGIS, ArcGIS y otras plataformas.</p>
+    </section>
+
+    <!-- Acerca de -->
+    <section class="section">
+      <h2>Acerca de</h2>
+      <img src="images/acerca-de.jpg" alt="Acerca de">
+      <p>Conoce el equipo detrás del portal, objetivos y cobertura del proyecto.</p>
+    </section>
+
+    <!-- Contacto -->
+    <section class="section">
+      <h2>Contacto / Soporte</h2>
+      <img src="images/contacto.jpg" alt="Contacto">
+      <p>Formulario de contacto, correo y redes sociales. Incluye una sección de preguntas frecuentes.</p>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 [Nombre de tu Empresa]. Todos los derechos reservados.</p>
+  <footer class="text-center p-4 bg-light mt-4">
+    <p>&copy; 2025 Plataforma Cartográfica. Todos los derechos reservados.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
